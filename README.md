@@ -34,9 +34,6 @@ python model-run.py
 
 We welcome contributions from the community. Please fork the repository and submit a pull request with your changes.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](link_to_license_file) file for details.
 
 ## Acknowledgements
 
