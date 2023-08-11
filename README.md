@@ -23,11 +23,14 @@ AiForALL is a state-of-the-art chatbot aimed at assisting with inquiries related
 
 # Install required dependencies, open terminal
 
-pip install -r requirements.txt
+**pip install -r requirements.txt**
 
 
 # Now execute our main program.
-python model-run.py
+
+**python model-run.py**
+
+Do note that you must have the llama-2-7b-chat.ggmlv3.q4_0.bin [model](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/blob/main/llama-2-7b-chat.ggmlv3.q4_0.bin) in the same directory. 
 
 We welcome contributions from the community. Please fork the repository and submit a pull request with your changes.
 
