@@ -25,9 +25,6 @@ AiForALL is a state-of-the-art chatbot aimed at assisting with inquiries related
 
 pip install -r requirements.txt
 
-# Run the program that converts the source document to the Open Source Vector Store, FAISS
-
-python store-code.py
 
 # Now execute our main program.
 python model-run.py
