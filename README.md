@@ -1,7 +1,7 @@
 # AiForALL: A Lawyer for all with AI on call..
 
 
-**Developed by:** Nidin A, Sneha S, Shebin Kurin Thomas, and Satyam Gupta.
+**Developed by:** Satyam Gupta, Sneha S, Shebin Kurin Thomas, and Nidin A.
 
 ## Introduction
 
