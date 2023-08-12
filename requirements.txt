@@ -7,3 +7,4 @@ transformers
 sentence_transformers
 faiss_cpu
 chainlit
+#Notd: Downloading the WSAL dataset is necessary for text to video
