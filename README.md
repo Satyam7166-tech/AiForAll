@@ -67,7 +67,6 @@ Working Flow:
    
 3. **Processing:** When a user submits a query:
     - The query from the user is directed to the FAISS vector database where the input text from the user is converted into vectors. The vector representation for text is designed to produce similar vectors for all the texts , where similar vectors are defined as those that are nearby in Euclidean space. Then based on similarites it retrieves relevant information within FAISS vector database.
-    - Then 
     - The generative model generates an answer using the context from the document and the user's question.
     
 4. **Response Generation:**
@@ -80,7 +79,7 @@ In essence, this Streamlit application acts as a law-related chatbot that can pr
 After this, we run the Output File :
 **python Output.py**
 
-Working Flow:
+Working Flow:   
 
 1. **User Interface Initialization:**
     - Using Streamlit, the application displays a title and allows users to enter their queries. They can also choose the desired output format: Text or Handsign Video.
@@ -100,7 +99,13 @@ Working Flow:
     - Speech:
         - The bot's response is converted to speech using `gTTS` (Google Text-to-Speech), which generates spoken language from written text.
         - The generated audio is played to the user using the `pygame` library, providing an auditory response.
-
+     
+## Future Works
+ - Our project AIForAll aimed at providing law support to all the people. But as we have trained this model just with labor law, our future enhancement will be focused on training this model with the whole of the Indian constitutional law, where any law related queries can be answered. 
+ - We would also like to enhance the input feature where the users can input their queries in the form of handsign video, a relevant audio regarding their problems.
+ - We are also planning to provide a multilingual aspect to the model where queries can be asked and relevant solutions will be provided based on their native languages
+- Considering the handsign output format, an animation of hand gestures would be a feasible model to obtain an interactive and easier communication
+  
 ## Acknowledgement 
 
 We want to thank the Intel oneAPI community for their invaluable toolkits and the Developer Cloud platform. These resources have greatly enhanced our capabilities and streamlined our development processes. Their dedication to fostering innovation is evident in the robustness and versatility of the Intel one API suite. Furthermore, the opportunity to explore and integrate Intel one API into our projects has been an enriching experience, significantly influencing our advancements in the field. I deeply appreciate the unwavering support and guidance from the community, and I look forward to our continued collaboration.
