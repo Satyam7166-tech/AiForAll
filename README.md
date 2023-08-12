@@ -6,9 +6,11 @@
 ## Introduction
 
 Many people in India, including the hearing, speech-impaired and those living in rural areas, face problems such as low pay and exploitative working conditions. These individuals may not be aware of their rights and may have difficulty interacting with lawyers or seeking legal assistance.
-Our project, AiForALL, is a state-of-the-art chatbot that assists with labor law inquiries. Our aim is to address these issues on labor law by providing an accessible and user-friendly platform for these individuals to learn about their rights and take action against those who abuse them. The chatbot takes text as input and can provide outputs in multiple formats: text, voice, and sign language video.
+Our project, AiForALL, is a state-of-the-art chatbot that assists with labour law inquiries. Our aim is to address these issues on labor law by providing an accessible and user-friendly platform for these individuals to learn about their rights and take action against those who abuse them. The chatbot takes text as input and can provide outputs in multiple formats: text, voice, and sign language video.
 
+## Our Mantra
 
+We believe in a more just world where everyone can stand up to what is not right. And we believe this, at some level, can be achieved through having more knowledge of the law. It is not possible for everyone to understand the complex language of the law or to remember all the rights. However, Large Language Models can... At the same time, we wish to bring this understanding of the law to hearing or speech-impaired people... #You don't necessarily need to speak to speeak out...
 ## Features
 
 - **Text-to-Text**: Simple text-based Q&A for all your labor law queries.
@@ -104,6 +106,8 @@ Working Flow:
  - Our project AiForAll aimed at providing law support to all the people. But as we have trained this model just with labor law, our future enhancement will be focused on training this model with the whole of Indian constitutional law, where any law related queries can be answered. 
  - We would also like to enhance the input feature where the users can input their queries in different languages to give a multilingual aspect to the model, or in the form of handsign video, a relevant audio regarding their problems.
 - Considering the handsign output format, an animation of hand gestures would be a feasible model to obtain an interactive and easier way of communication for the hearing impaired people.
+- We plan to expand our domain from labour laws and aim to fine-tune our LLM on every constitution of the world so that anyone, irrespective of their nationality, can be more aware of legal laws.
+- 
   
 ## Acknowledgement 
 
