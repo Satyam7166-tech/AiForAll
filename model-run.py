@@ -15,10 +15,13 @@ from langchain.llms import CTransformers
 from langchain.chains import RetrievalQA
 from output import text_to_asl_video
 from textwrap import shorten
+import subprocess
+import time
+
 
 DB_FAISS_PATH = 'vectorstore/db_faiss'
 
-custom_prompt_template = """Use the following pieces of information to answer the user's question and quote the right article whenver you can.
+custom_prompt_template = """When asked about legal matters, use the following pieces of information to answer the user's question and quote the Indian Laws whenenver you can.
 If you don't know the answer, just say that you don't know, don't try to make up an answer.
 
 Context: {context}
@@ -132,29 +135,52 @@ def play_audio(audio_file_path):
     while pygame.mixer.music.get_busy():
         pygame.time.Clock().tick(10)
 
+        
 
+# from textwrap import shorten
 def main():
+        
     st.title("Ai For ALL")
     st.write("A lawyer for all with AI on call...")
-    user_input = st.text_input("You (Text):", "Enter your queries here...", key="text_input")
-    output_format = st.selectbox("Select Output Format:", ["Text", "Speech", "Video"])
+
+    # New selection for input type (text or video)
+    input_type = st.selectbox("Select Input Type:", ["Text", "Video"], key="input_type")
+
+    if input_type == "Text":
+        user_input = st.text_input("You (Text):", "Enter your queries here...", key="text_input")
+        output_format = st.selectbox("Select Output Format:", ["Text", "Speech", "Video"], key="s1")
+        # ... rest of the code for handling text input ...
+    else:
+        st.write("Running hand gesture tracking...")
+        
+        # Execute "run1.py" (can be done using subprocess)
+        import subprocess
+        process = subprocess.Popen(['python', 'hand-gesture-recognition-code/run-0.py'])
+        import time
+        time.sleep(20) # Run for 10 seconds
+        process.terminate() # Terminate the process
+        
+        st.write("Hey, there! This feature is not ready yet and only tracks your hand gestures, kindly select text as input.")
+
+        user_input = st.text_input("You (Text):", "Enter your queries here...", key="text_input")
+        output_format = st.selectbox("Select Output Format:", ["Text", "Speech", "Video"], key="s1")
+        
+        response = final_result(user_input)['result']  # Get the model's response and extract the 'result' key
+
+        # Display the full text response
+        st.write(f"Bot (Text): {response}")
+
+        # If video is selected, summarize the response and generate/display the hand-sign video
+        if output_format == "Video":
+            response_text = shorten(response, width=60, placeholder="...")  # Summarize to 30 words
+            video_html = generate_hand_sign_videos(response_text)  # Use summarized response
+            st.components.v1.html(video_html, height=200)  # Adjust the height as needed
     
-    response = final_result(user_input)['result']  # Get the model's response and extract the 'result' key
-
-    # Display the full text response
-    st.write(f"Bot (Text): {response}")
-
-    # If video is selected, summarize the response and generate/display the hand-sign video
-    if output_format == "Video":
-        response_text = shorten(response, width=30, placeholder="...")  # Summarize to 30 words
-        video_html = generate_hand_sign_videos(response_text)  # Use summarized response
-        st.components.v1.html(video_html, height=200)  # Adjust the height as needed
-
-    if output_format == "Speech":
-        temp_audio_file = tempfile.NamedTemporaryFile(delete=False, suffix='.mp3')
-        tts = gTTS(text=response, lang='en')
-        tts.save(temp_audio_file.name)
-        play_audio(temp_audio_file.name)
+        if output_format == "Speech":
+            temp_audio_file = tempfile.NamedTemporaryFile(delete=False, suffix='.mp3')
+            tts = gTTS(text=response, lang='en')
+            tts.save(temp_audio_file.name)
+            play_audio(temp_audio_file.name)
 
 
         
