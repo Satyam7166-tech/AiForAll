@@ -48,27 +48,28 @@ Our project, AiForALL, is a state-of-the-art chatbot that assists with labor law
 
 ## Usage
 
-The input for this project is taken in two ways, one, Text and the other Real Time Hand Sign videos through the Web Camera. The video from the Web Cam will be then will convert these signs into text and this text is stored in text file and fed to the chatbot as input. The entire project is Developed on **Intel Developer** code using **Tensorflow_CPU** notebook
+The input for this project is taken in two ways, one, Text and the other is Real Time Hand Sign videos through the users Web Camera. The video from the Web Cam will be then will convert these signs into text and this text is stored in text file and fed to the chatbot as input. The entire project is Developed on **Intel Developer** code using **Tensorflow_CPU** notebook
 
 Now execute our main program.
 **python model-run.py**
-Do note that you must have the llama-2-7b-chat.ggmlv3.q4_0.bin model in the same directory.
+Do note that you must have the llama-2-7b-chat.ggmlv3.q4_0.bin model in the same directory and 'pip install' all those required libraries within requirements.txt
+
 
 The working flow of the main program is as follows : 
 Working Flow:
 
-1. **Initialization:** The application starts, displaying a title "Ai For ALL" and a subtitle "A lawyer for all with AI on call...".
+1. **Initialization:** The application is built in streamlit, an open source framework. Our application interface, displays the title saying "Ai For ALL" and a subtitle "A lawyer for all with AI on call...".
    
-3. **User Input:** Users can enter their queries and select an output format: Text, Speech, or Video.
+2. **User Input:** The interface has the user input prompt where the users can enter their queries and select an output format: Text, Speech, or Video.
 
    ![image](https://github.com/Satyam7166-tech/AiForAll/assets/62897696/b0352059-7764-42ab-858d-7d89e3d3c487)
 
    
-5. **Processing:** When a user submits a query:
+3. **Processing:** When a user submits a query:
     - The FAISS vector store retrieves relevant document sections.
     - The generative model generates an answer using the context from the document and the user's question.
     
-6. **Response Generation:**
+4. **Response Generation:**
     - For "Text" format: The bot's response is directly displayed.
     - For "Video" format: The response is summarized and converted to a series of hand sign videos, which are then displayed.
     - For "Speech" format: The response is converted to speech using `gTTS`, and the audio is played using `pygame`.
