@@ -42,7 +42,7 @@ Our project, AiForALL, is a state-of-the-art chatbot that assists with labor law
 
 ## Usage
 
-The input for this project is taken in two ways, one, Text and the other Real Time Hand Sign videos through the Web Camera. The video from the Web Cam will be then will convert these signs into text and this text is stored in text file and fed to the chatbot as input. 
+The input for this project is taken in two ways, one, Text and the other Real Time Hand Sign videos through the Web Camera. The video from the Web Cam will be then will convert these signs into text and this text is stored in text file and fed to the chatbot as input. The entire project is Developed on **Intel Developer** code using **Tensorflow_CPU** notebook
 
 Now execute our main program.
 **python model-run.py**
