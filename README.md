@@ -3,6 +3,8 @@
 
 **Developed by:** Satyam Gupta, Sneha S, Shebin Kurin Thomas, and Nidin A.
 
+Video Link: https://drive.google.com/drive/folders/1mh6V2M1CDUCcLAE090XfJcG68vKjVdlc?usp=sharing
+
 ## Introduction
 
 Many people in India, including the hearing, speech-impaired and those living in rural areas, face problems such as low pay and exploitative working conditions. These individuals may not be aware of their rights and may have difficulty interacting with lawyers or seeking legal assistance.
