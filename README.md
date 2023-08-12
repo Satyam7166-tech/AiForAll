@@ -41,6 +41,11 @@ Our project, AiForALL, is a state-of-the-art chatbot that assists with labor law
 19. **`requests`** : A popular Python library for making HTTP requests to web services, simplifying the process of sending and receiving data.
 20. **`json`** : A module in Python's standard library for encoding and decoding JSON formatted data.
 
+## Model Architecture
+
+![image](https://github.com/Satyam7166-tech/AiForAll/assets/62897696/27154d35-08d0-448b-b2e1-108b95118344)
+
+
 ## Usage
 
 The input for this project is taken in two ways, one, Text and the other Real Time Hand Sign videos through the Web Camera. The video from the Web Cam will be then will convert these signs into text and this text is stored in text file and fed to the chatbot as input. The entire project is Developed on **Intel Developer** code using **Tensorflow_CPU** notebook
