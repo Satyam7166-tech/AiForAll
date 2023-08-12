@@ -20,24 +20,25 @@ Our project, AiForALL, is a state-of-the-art chatbot that assists with labor law
 **pip install -r requirements.txt**
 
 # Requirements : 
-1. **`gtts`**: Google Text-to-Speech conversion library.
-2. **`io`**: Python's standard library for handling streams.
-3. **`pygame`**: Library for creating games and multimedia applications.
-4. **`tempfile`**: Python's standard library for generating temporary files and directories.
-5. **`pydub`**: Library for audio processing.
-6. **`streamlit`**: Python library for creating web applications.
-7. **`langchain`**: Seems to be a custom or specialized library, given the multiple modules imported from it (like `vectorstores`, `embeddings`, `llms`, and `chains`).
-8. **'output'**: Not sure about this; it might be a local module or another custom library.
-9. **'textwrap'**: Python's standard library for wrapping and filling text.
-10. **`torch`**: A scientific computing framework that offers wide support for deep learning algorithms using tensors and dynamic neural networks in Python.
-11. **`accelerate`**: A library from Hugging Face for easy and fast acceleration of PyTorch models using mixed precision and distributed training.
-12. **`bitsandbytes`**: An optimized library for training deep learning models using 8-bit optimizers, which can significantly accelerate training without compromising accuracy.
-13. **`transformers`**: A library by Hugging Face that provides pre-trained models for Natural Language Processing (NLP) tasks like text classification, translation, and more. It includes models like BERT, GPT-2, T5, and others.
-14. **`sentence_transformers`**: A library for computing dense vector representations of sentences and paragraphs, often based on models from the `transformers` library. Useful for semantic search applications and other NLP tasks where sentence embeddings are required.
-15. **`faiss_cpu`**: A library developed by Facebook AI for efficient similarity search and clustering of dense vectors. The `faiss_cpu` version is optimized for CPU usage.
-16. **`chainlit`**: As of my last training data in September 2021, I'm not familiar with a library named "chainlit". It might be a new, niche, or specialized library. You might want to refer to the library's official documentation or repository for a brief description.
-17. **`IPython.display`** : A module within IPython for displaying rich media outputs in Jupyter notebooks, such as images, audio, and video.
-18. **`requests`** : A popular Python library for making HTTP requests to web services, simplifying the process of sending and receiving data.
+1. **IDC**: Intel Developer Cloud
+2. **`gtts`**: Google Text-to-Speech conversion library.
+3. **`io`**: Python's standard library for handling streams.
+4. **`pygame`**: Library for creating games and multimedia applications.
+5. **`tempfile`**: Python's standard library for generating temporary files and directories.
+6. **`pydub`**: Library for audio processing.
+7. **`streamlit`**: Python library for creating web applications.
+8. **`langchain`**: Seems to be a custom or specialized library, given the multiple modules imported from it (like `vectorstores`, `embeddings`, `llms`, and `chains`).
+9. **'output'**: Not sure about this; it might be a local module or another custom library.
+10. **'textwrap'**: Python's standard library for wrapping and filling text.
+11. **`torch`**: A scientific computing framework that offers wide support for deep learning algorithms using tensors and dynamic neural networks in Python.
+12. **`accelerate`**: A library from Hugging Face for easy and fast acceleration of PyTorch models using mixed precision and distributed training.
+13. **`bitsandbytes`**: An optimized library for training deep learning models using 8-bit optimizers, which can significantly accelerate training without compromising accuracy.
+14. **`transformers`**: A library by Hugging Face that provides pre-trained models for Natural Language Processing (NLP) tasks like text classification, translation, and more. It includes models like BERT, GPT-2, T5, and others.
+15. **`sentence_transformers`**: A library for computing dense vector representations of sentences and paragraphs, often based on models from the `transformers` library. Useful for semantic search applications and other NLP tasks where sentence embeddings are required.
+16. **`faiss_cpu`**: A library developed by Facebook AI for efficient similarity search and clustering of dense vectors. The `faiss_cpu` version is optimized for CPU usage.
+17. **`chainlit`**: As of my last training data in September 2021, I'm not familiar with a library named "chainlit". It might be a new, niche, or specialized library. You might want to refer to the library's official documentation or repository for a brief description.
+18. **`IPython.display`** : A module within IPython for displaying rich media outputs in Jupyter notebooks, such as images, audio, and video.
+19. **`requests`** : A popular Python library for making HTTP requests to web services, simplifying the process of sending and receiving data.
 20. **`json`** : A module in Python's standard library for encoding and decoding JSON formatted data.
 
 ## Usage
