@@ -51,15 +51,15 @@ Do note that you must have the llama-2-7b-chat.ggmlv3.q4_0.bin model in the same
 The working flow of the main program is as follows : 
 Working Flow:
 
-1. Initialization: The application starts, displaying a title "Ai For ALL" and a subtitle "A lawyer for all with AI on call...".
+1. **Initialization:** The application starts, displaying a title "Ai For ALL" and a subtitle "A lawyer for all with AI on call...".
    
-3. User Input: Users can enter their queries and select an output format: Text, Speech, or Video.
+3. **User Input:** Users can enter their queries and select an output format: Text, Speech, or Video.
    
-5. Processing: When a user submits a query:
+5. **Processing:** When a user submits a query:
     - The FAISS vector store retrieves relevant document sections.
     - The generative model generates an answer using the context from the document and the user's question.
     
-6. Response Generation:
+6. **Response Generation:**
     - For "Text" format: The bot's response is directly displayed.
     - For "Video" format: The response is summarized and converted to a series of hand sign videos, which are then displayed.
     - For "Speech" format: The response is converted to speech using `gTTS`, and the audio is played using `pygame`.
@@ -67,18 +67,18 @@ Working Flow:
 In essence, this Streamlit application acts as a law-related chatbot that can provide answers in text, audio, or ASL video formats. The use of hand sign videos is a unique feature, making the chatbot more accessible to users with hearing impairments.
 
 After this, we run the Output File :
-python Output.py
+**python Output.py**
 
 Working Flow:
 
-1. User Interface Initialization:
+1. **User Interface Initialization:**
     - Using Streamlit, the application displays a title and allows users to enter their queries. They can also choose the desired output format: Text, Speech, or Video.
 
-2. Query Processing:
+2. **Query Processing:**
     - FAISS Vector Store: When a query is submitted, the application uses the FAISS vector store to search for relevant sections from stored documents. FAISS allows for efficient similarity search in a collection of vectors, making it suitable for retrieving relevant document sections quickly.
     - Generative Model (Llama): The retrieved document section (context) and user's query are passed to a generative model named "Llama". This model, guided by the custom prompt template, generates a relevant answer based on the provided context and question.
 
-3. Response Generation:
+3. **Response Generation:**
     - Text: If the user selected the Text output format, the bot's response is directly displayed on the interface.
     - Video (ASL):
         - The bot's response is summarized to a shorter version.
@@ -102,6 +102,7 @@ Do note that you must have the llama-2-7b-chat.ggmlv3.q4_0.bin [model](https://h
 We welcome contributions from the community. Please fork the repository and submit a pull request with your changes.
 
 
-## Acknowledgements
+## Acknowledgement 
 
-We'd like to thank the community for their continuous support and feedback.
+We want to thank the Intel oneAPI community for their invaluable toolkits and the Developer Cloud platform. These resources have greatly enhanced our capabilities and streamlined our development processes. Their dedication to fostering innovation is evident in the robustness and versatility of the Intel one API suite. Furthermore, the opportunity to explore and integrate Intel one API into our projects has been an enriching experience, significantly influencing our advancements in the field. I deeply appreciate the unwavering support and guidance from the community, and I look forward to our continued collaboration.
+
