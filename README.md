@@ -87,21 +87,6 @@ Working Flow:
         - The bot's response is converted to speech using `gTTS` (Google Text-to-Speech), which generates spoken language from written text.
         - The generated audio is played to the user using the `pygame` library, providing an auditory response.
 
-
-# Install required dependencies, open terminal
-
-**pip install -r requirements.txt**
-
-
-# Now execute our main program.
-
-**python model-run.py**
-
-Do note that you must have the llama-2-7b-chat.ggmlv3.q4_0.bin [model](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/blob/main/llama-2-7b-chat.ggmlv3.q4_0.bin) in the same directory. 
-
-We welcome contributions from the community. Please fork the repository and submit a pull request with your changes.
-
-
 ## Acknowledgement 
 
 We want to thank the Intel oneAPI community for their invaluable toolkits and the Developer Cloud platform. These resources have greatly enhanced our capabilities and streamlined our development processes. Their dedication to fostering innovation is evident in the robustness and versatility of the Intel one API suite. Furthermore, the opportunity to explore and integrate Intel one API into our projects has been an enriching experience, significantly influencing our advancements in the field. I deeply appreciate the unwavering support and guidance from the community, and I look forward to our continued collaboration.
