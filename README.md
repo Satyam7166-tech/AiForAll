@@ -101,10 +101,10 @@ Working Flow:
         - The generated audio is played to the user using the `pygame` library, providing an auditory response.
      
 ## Future Works
- - Our project AIForAll aimed at providing law support to all the people. But as we have trained this model just with labor law, our future enhancement will be focused on training this model with the whole of the Indian constitutional law, where any law related queries can be answered. 
+ - Our project AIForAll aimed at providing law support to all the people. But as we have trained this model just with labor law, our future enhancement will be focused on training this model with the whole of Indian constitutional law, where any law related queries can be answered. 
  - We would also like to enhance the input feature where the users can input their queries in the form of handsign video, a relevant audio regarding their problems.
- - We are also planning to provide a multilingual aspect to the model where queries can be asked and relevant solutions will be provided based on their native languages
-- Considering the handsign output format, an animation of hand gestures would be a feasible model to obtain an interactive and easier communication
+ - We are also planning to provide a multilingual aspect to the model where queries can be asked and relevant solutions will be provided based on their prefered languages.
+- Considering the handsign output format, an animation of hand gestures would be a feasible model to obtain an interactive and easier way of communication for the hearing impaired people.
   
 ## Acknowledgement 
 
