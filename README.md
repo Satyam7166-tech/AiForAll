@@ -60,13 +60,14 @@ Working Flow:
 
 1. **Initialization:** The application is built in streamlit, an open source framework. Our application interface, displays the title saying "Ai For ALL" and a subtitle "A lawyer for all with AI on call...".
    
-2. **User Input:** The interface has the user input prompt where the users can enter their queries and select an output format: Text, Speech, or Video.
+2. **User Input:** The interface has the user input prompt where the users can enter their queries and select an output format: Text or Video. Below is an image displaying the user input prompts with those two options.
 
    ![image](https://github.com/Satyam7166-tech/AiForAll/assets/62897696/b0352059-7764-42ab-858d-7d89e3d3c487)
 
    
 3. **Processing:** When a user submits a query:
-    - The FAISS vector store retrieves relevant document sections.
+    - The query from the user is directed to the FAISS vector database where the input text from the user is converted into vectors. The vector representation for text is designed to produce similar vectors for all the texts , where similar vectors are defined as those that are nearby in Euclidean space. Then based on similarites it retrieves relevant information within FAISS vector database.
+    - Then 
     - The generative model generates an answer using the context from the document and the user's question.
     
 4. **Response Generation:**
@@ -82,7 +83,7 @@ After this, we run the Output File :
 Working Flow:
 
 1. **User Interface Initialization:**
-    - Using Streamlit, the application displays a title and allows users to enter their queries. They can also choose the desired output format: Text, Speech, or Video.
+    - Using Streamlit, the application displays a title and allows users to enter their queries. They can also choose the desired output format: Text or Handsign Video.
 
    ![image](https://github.com/Satyam7166-tech/AiForAll/assets/62897696/dff632a1-cbc3-4039-9fa6-0d54eb16ce9c)
 
