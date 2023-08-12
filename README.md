@@ -54,6 +54,9 @@ Working Flow:
 1. **Initialization:** The application starts, displaying a title "Ai For ALL" and a subtitle "A lawyer for all with AI on call...".
    
 3. **User Input:** Users can enter their queries and select an output format: Text, Speech, or Video.
+
+   ![image](https://github.com/Satyam7166-tech/AiForAll/assets/62897696/b0352059-7764-42ab-858d-7d89e3d3c487)
+
    
 5. **Processing:** When a user submits a query:
     - The FAISS vector store retrieves relevant document sections.
@@ -73,6 +76,9 @@ Working Flow:
 
 1. **User Interface Initialization:**
     - Using Streamlit, the application displays a title and allows users to enter their queries. They can also choose the desired output format: Text, Speech, or Video.
+
+   ![image](https://github.com/Satyam7166-tech/AiForAll/assets/62897696/dff632a1-cbc3-4039-9fa6-0d54eb16ce9c)
+
 
 2. **Query Processing:**
     - FAISS Vector Store: When a query is submitted, the application uses the FAISS vector store to search for relevant sections from stored documents. FAISS allows for efficient similarity search in a collection of vectors, making it suitable for retrieving relevant document sections quickly.
