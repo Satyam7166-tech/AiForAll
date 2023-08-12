@@ -1,4 +1,4 @@
-# AiForALL: A Chatbot on Labor Law
+# AiForALL: A Lawyer for all with AI on call..
 
 
 **Developed by:** Nidin A, Sneha S, Shebin Kurin Thomas, and Satyam Gupta.
