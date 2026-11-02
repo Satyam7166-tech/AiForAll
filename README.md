@@ -39,10 +39,9 @@ We believe in a more just world where everyone can stand up to what is not right
 14. **`transformers`**: A library by Hugging Face that provides pre-trained models for Natural Language Processing (NLP) tasks like text classification, translation, and more. It includes models like BERT, GPT-2, T5, and others.
 15. **`sentence_transformers`**: A library for computing dense vector representations of sentences and paragraphs, often based on models from the `transformers` library. Useful for semantic search applications and other NLP tasks where sentence embeddings are required.
 16. **`faiss_cpu`**: A library developed by Facebook AI for efficient similarity search and clustering of dense vectors. The `faiss_cpu` version is optimized for CPU usage.
-17. **`chainlit`**: As of my last training data in September 2021, I'm not familiar with a library named "chainlit". It might be a new, niche, or specialized library. You might want to refer to the library's official documentation or repository for a brief description.
-18. **`IPython.display`** : A module within IPython for displaying rich media outputs in Jupyter notebooks, such as images, audio, and video.
-19. **`requests`** : A popular Python library for making HTTP requests to web services, simplifying the process of sending and receiving data.
-20. **`json`** : A module in Python's standard library for encoding and decoding JSON formatted data.
+17. **`IPython.display`** : A module within IPython for displaying rich media outputs in Jupyter notebooks, such as images, audio, and video.
+18. **`requests`** : A popular Python library for making HTTP requests to web services, simplifying the process of sending and receiving data.
+19. **`json`** : A module in Python's standard library for encoding and decoding JSON formatted data.
 
 ## Model Architecture
 
